@@ -11,13 +11,12 @@ This library initializes on first run.
 
 Recommended hardware/software stack.
 
-Recommended Hardware:
-  Teensy 3.1
-  Adafruit 5v Ready SD Card Breakout
-  APA102 leds
-  
-Recommended Software
-  SdFat library
+    Recommended Hardware:
+      Teensy 3.1
+      Adafruit 5v Ready SD Card Breakout
+      APA102 leds
+    Recommended Software
+        SdFat library
 
 Example - paint one pixel violet:
 
