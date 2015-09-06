@@ -1,7 +1,9 @@
 # ArduinoSoftSpi
-Soft Spi for the Arduino. This is useful for those trying to read from an sd card while trying to write an APA102 led strip on the Teensy 3.1. Other platforms are likely supported but haven't been verified with this codebase.
+Soft Spi output for the Arduino. This is useful for those trying to read from an sd card while trying to write an APA102 led strip on the Teensy 3.1. Other platforms are likely supported but haven't been verified with this codebase.
 
 This solution addresses a major pain point for LED artists that are trying to run video from an SD card on a Teensy 3.1. This soft spi library is estimated to have 30 frame per second performance with 14 meters of 144 pixel density led strips.
+
+The underlying library appears to support SPI input as well and this can easily be enabled by the developer. However it seems suspect that software spi input could work very well due to a lack of a hardware input buffer.
 
 Usage:
 
@@ -16,7 +18,7 @@ Recommended hardware/software stack.
       Adafruit 5v Ready SD Card Breakout
       APA102 leds
     Recommended Software
-        SdFat library
+      SdFat library
 
 Example - paint one pixel violet:
 
